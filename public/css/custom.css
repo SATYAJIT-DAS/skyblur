@@ -2,22 +2,8 @@
   width: 100%;
 }
 
-.navigation .container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.navigation .navbar-toggler {
-  font-size: 20px;
-}
-
 .navigation .navbar-brand {
   font-size: 22px;
-  font-weight: 700;
-}
-
-.navigation .nav-text {
-  margin: 12px 16px;
 }
 
 .search-box-div .search-box .form-control {
@@ -60,6 +46,17 @@
 .dropdown-menu-center {
   left: 50%;
   transform: translateX(-80%);
+}
+
+.offer-card {
+  height: 20rem;
+}
+
+.offer-text {
+  text-align: center;
+  font-size: 25px;
+  color: cornsilk;
+  padding-top: 15%;
 }
 
 @media only screen and (min-width: 768px) {

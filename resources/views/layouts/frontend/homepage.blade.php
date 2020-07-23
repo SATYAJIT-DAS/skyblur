@@ -4,7 +4,7 @@
 <section class="navigation">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">SKYBLUR</a>
+            <a class="navbar-brand font-weight-bold" href="#">SKYBLUR</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -12,13 +12,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
               <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
                 <li class="nav-item active">
-                  <a class="nav-text " href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-text  mt-2 ml-2 mb-2" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-text" href="#">Link</a>
+                  <a class="nav-text mt-2 ml-2 mb-2" href="#">Link</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-text " href="#">Disabled</a>
+                  <a class="nav-text  mt-2 ml-2 mb-2" href="#">Disabled</a>
                 </li>
               </ul>
               <ul class="nav navbar-menu order-1 order-lg-2">
@@ -111,8 +111,8 @@
 </section>
 <section class="slider position-relative">
     <div class="page-content page-container" id="page-content">
-        <div class="padding">
-            <div class="block p-md-3 ">
+        <div class="p-1">
+            <div class="block">
                 <div id="carouselCaptions" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
                         <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
@@ -185,7 +185,7 @@
     </div>
 </section>
 
-<section class="card-boxs">
+<section class="card-boxs mt-5">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-12">
@@ -225,12 +225,56 @@
     </div>
 </section>
 
-<Section class="offer">
+<Section class="offer mt-5">
     <div class="container">
+        <div class="d-flex justify-content-center pb-3">
+            <h1>Limited Offer</h1>
+        </div>
         <div class="row">
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card rounded w-100 ">
+                    <div class="rounded-top"style="background-color: #0066cc">
+                        <h1 class="text-center text-white ">test</h1>
+                    </div>
+                    <div class="details offer-card rounded-bottom" style="background: url({{ asset('img/talking.jpg') }}) no-repeat center;background-size: cover;">
+                        <p class="offer-text" style="">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="mb-3 text-center">
+                            <button class="btn w-sm mb-1 btn-rounded btn-outline-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card rounded w-100 ">
+                    <div class="rounded-top"style="background-color: #01b31a;">
+                        <h1 class="text-center text-white ">test</h1>
+                    </div>
+                    <div class="details offer-card rounded-bottom" style="background: url({{ asset('img/talking-2.jpg') }}) no-repeat center;background-size: cover;">
+                        <p class="offer-text" style="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="mb-3 text-center">
+                            <button class="btn w-sm mb-1 btn-rounded btn-outline-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card rounded w-100 ">
+                    <div class="rounded-top"style="background-color: #5212a1">
+                        <h1 class="text-center text-white ">test</h1>
+                    </div>
+                    <div class="details offer-card rounded-bottom" style="background: url({{ asset('img/talking-3.jpg') }}) no-repeat center;background-size: cover;">
+                        <p class="offer-text" style="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="mb-3 text-center">
+                            <button class="btn w-sm mb-1 btn-rounded btn-outline-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </Section>
+
+
 
 
 

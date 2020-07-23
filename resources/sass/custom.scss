@@ -1,21 +1,10 @@
 .navigation{
     width: 100%;
-    .container-fluid{
-        padding-left: 0!important;
-        padding-right: 0!important;
-    }
-    .navbar-toggler{
-        font-size: 20px;
-    }
     .navbar-brand{
         font-size: 22px;
-        font-weight: 700;
-
-    }
-    .nav-text{
-        margin: 12px 16px;
     }
 }
+
 .search-box-div{
     .search-box {
         .form-control {
@@ -26,6 +15,7 @@
         .search-icon {
         position: absolute;
         // z-index: 2;
+
         display: block;
         width: 40px;
         height: 16px;
@@ -60,6 +50,17 @@
     left: 50%;
     transform: translateX(-80%);
 }
+
+.offer-card{
+    height: 20rem;
+}
+.offer-text{
+    text-align: center;
+    font-size: 25px;
+    color: cornsilk;
+    padding-top: 15%;
+}
+
 @media only screen and (min-width: 768px){
     .search-box-div{
         position: absolute;
