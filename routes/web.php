@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use Illuminate\Support\Facades\Auth;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -25,5 +25,5 @@ Route::prefix('/admin')->namespace("Admin")->group(function () {
         Route::get('settings', 'AdminController@settings')->name('admin.settings');
         Route::get('logout', 'AdminController@logout')->name('admin.logout');
     });
-    
+
 });

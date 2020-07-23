@@ -10,6 +10,10 @@
         <link rel="stylesheet" href="{{ asset('css/basik_css/bootstrap.css') }}" type="text/css" />
         <link rel="stylesheet" href="{{ asset('css/basik_css/theme.css') }}" type="text/css" />
         <link rel="stylesheet" href="{{ asset('css/basik_css/style.css') }}" type="text/css" />
+        <link rel="stylesheet" href="{{ asset('css/custom.css') }}" type="text/css" />
         <!-- endbuild -->
     </head>
-    <body class="layout-row">
+    @if (Request::is('admin/*'))
+        <body class="layout-row">
+    @endif
+    <body class="layout-coloum">
