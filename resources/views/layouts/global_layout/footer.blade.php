@@ -29,5 +29,9 @@
 <script src="{{ asset('js/basik_js/theme.js') }}"></script>
 <script src="{{ asset('js/basik_js/utils.js') }}"></script>
 <!-- endbuild -->
+{{-- custom js  for admin--}}
+@if (Request::is('admin/*'))
+<script src="{{asset('js/admin/script.js')}}"></script>
+@endif
     </body>
 </html>

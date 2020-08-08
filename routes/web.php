@@ -13,17 +13,22 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 
-Route::get('/','FrontendController@homepage')->name('homepage');
-Route::get('/test','FrontendController@test');
-Auth::routes();
+Route::get('/', 'FrontendController@homepage')->name('homepage');
+Route::get('/test', 'FrontendController@test');
 Route::get('/home', 'HomeController@index')->name('user.home');
+Auth::routes();
+Route::group(['middleware' => 'auth'], function () {
+});
 
 Route::prefix('/admin')->namespace("Admin")->group(function () {
-    Route::match(['get','post'],'/','AdminController@login')->name('admin.login');
-    Route::group(['middleware' => ['admin']],function(){
+    Route::get('/', 'AdminController@loginView')->name('admin.login');
+    Route::post('/', 'AdminController@login');
+    Route::group(['middleware' => ['admin']], function () {
         Route::get('dashboard', 'AdminController@dashboard')->name('admin.dashboard');
         Route::get('settings', 'AdminController@settings')->name('admin.settings');
+        Route::post('check-current-pwd', 'AdminController@chkCurrentPwd');
+        Route::post('update-pwd', 'AdminController@updatePwd');
+        Route::post('update-profile-img', 'AdminController@updateProfileimg')->name('admin.profile.img');
         Route::get('logout', 'AdminController@logout')->name('admin.logout');
     });
-
 });
