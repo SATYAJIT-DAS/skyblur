@@ -14,4 +14,12 @@ class FrontendController extends Controller
     public function test(){
          return ApiRequest::getGuzzleRequest('/catalog/skus');
     }
+    public function blog()
+    {
+        return view('layouts.frontend.blog');
+    }
+    public function singlepage()
+    {
+        return view('layouts.frontend.singlepage');
+    }
 }

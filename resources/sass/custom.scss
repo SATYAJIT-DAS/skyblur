@@ -1,3 +1,15 @@
+
+$navigation-color:#aaa;
+$offertext-color:#fdf3ca;
+$customfooterbg-color: #2e3624;
+$customfooterhr-color: #4e4e4e;
+$customfooterh5-color: #ffffff;
+$customfooterap-color: #cecece;
+$footer-copyrightbg-color: #21271a;
+$scrollbg-color: #ffffff;
+$scrollspan-color: #cecece;
+$scrollhover-color: #04788a;
+
 .navigation{
     width: 100%;
     .navbar-brand{
@@ -15,14 +27,13 @@
         .search-icon {
         position: absolute;
         // z-index: 2;
-
         display: block;
         width: 40px;
         height: 16px;
         line-height: 50px;
         text-align: center;
         pointer-events: none;
-        color: #aaa;
+        color: $navigation-color;
         }
     }
 
@@ -53,12 +64,83 @@
 
 .offer-card{
     height: 20rem;
+    .offer-text{
+        text-align: center;
+        font-size: 25px;
+        color: $offertext-color;
+        padding-top: 15%;
+    }
+
 }
-.offer-text{
-    text-align: center;
-    font-size: 25px;
-    color: cornsilk;
-    padding-top: 15%;
+
+.custom-footer{
+    background-color: $customfooterbg-color;
+
+    hr {
+        border-color: $customfooterhr-color;
+    }
+
+    h5{
+        color: $customfooterh5-color;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .custom-link {
+        a{
+            color:$customfooterap-color;
+        }
+        p{
+            color:$customfooterap-color;
+        }
+    }
+    .footer-copyright{
+        background-color: $footer-copyrightbg-color;
+    }
+}
+
+.card-pic {
+    width: 180px;
+    position: relative;
+    right: -188px;
+}
+
+.navbar-toggler{
+    font-size: 20px;
+}
+
+#scroll {
+    position:fixed;
+    right:10px;
+    bottom:10px;
+    cursor:pointer;
+    width:50px;
+    height:50px;
+    background-color:$scrollbg-color;
+    box-shadow: 0px 3px 13px 1px rgba(0,0,0,.30);
+    text-indent:-9999px;
+    display:none;
+    -webkit-border-radius:60px;
+    -moz-border-radius:60px;
+    border-radius:60px
+}
+
+#scroll span {
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-left:-8px;
+    margin-top:-12px;
+    height:0;
+    width:0;
+    border:8px solid transparent;
+    border-bottom-color:$scrollspan-color;
+}
+
+#scroll:hover {
+    background-color:$scrollhover-color;
+    opacity:1;filter:"alpha(opacity=100)";
+    -ms-filter:"alpha(opacity=100)";
 }
 
 @media only screen and (min-width: 768px){

@@ -15,6 +15,8 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/','FrontendController@homepage')->name('homepage');
 Route::get('/test','FrontendController@test');
+Route::get('/blog','FrontendController@blog')->name('blog');
+Route::get('/singlepage','FrontendController@singlepage')->name('singlepage');
 Auth::routes();
 Route::get('/home', 'HomeController@index')->name('user.home');
 

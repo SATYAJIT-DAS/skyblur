@@ -1,114 +1,5 @@
 @extends('layouts.frontend.frontend_layout')
 @section('content')
-
-<section class="navigation">
-    <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand font-weight-bold" href="#">SKYBLUR</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-              <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-                <li class="nav-item active">
-                  <a class="nav-text  mt-2 ml-2 mb-2" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-text mt-2 ml-2 mb-2" href="#">Link</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-text  mt-2 ml-2 mb-2" href="#">Disabled</a>
-                </li>
-              </ul>
-              <ul class="nav navbar-menu order-1 order-lg-2">
-                <li class="nav-item dropdown">
-                    <a class="nav-link"  href="{{ route('login') }}">
-                        Sign in
-                    </a>
-                    <!-- dropdown -->
-                    {{-- <div class="dropdown-menu dropdown-menu-right">
-                        <div class="p-4">
-                            <form class="dropdown-menu-right" role="form" action="dashboard.html">
-                                <div class="form-group">
-                                    <label>Email</label>
-                                    <input type="email" class="form-control" placeholder="Enter email">
-                                </div>
-                                <div class="form-group">
-                                    <label>Password</label>
-                                    <input type="password" class="form-control" placeholder="Password">
-                                    <div class="my-3 text-right">
-                                        <a href="forgot-password.html" class="text-muted">Forgot password?</a>
-                                    </div>
-                                </div>
-                                <div class="checkbox mb-3">
-                                    <label class="ui-check">
-                                        <input type="checkbox">
-                                        <i></i> Remember me
-                                    </label>
-                                </div>
-                                <button type="submit" class="btn btn-primary mb-4">Sign in</button>
-                                <div>Do not have an account?
-                                    <a href="signup.html" class="text-primary">Sign up</a>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Forgot password?</a>
-                    </div> --}}
-                    <!-- / dropdown -->
-                </li>
-                <li class="d-flex align-items-center">
-                    <a href="{{ route('register') }}" class="btn btn-rounded btn-sm btn-primary d-none d-lg-block">
-                        Register
-                    </a>
-                </li>
-                <ul class="nav navbar-menu order-1 order-lg-2">
-                    <li class="nav-item d-none d-sm-block">
-                      <a class="nav-link px-2" data-toggle="fullscreen" data-plugin="fullscreen">
-                        <i data-feather="maximize"></i>
-                      </a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link px-2" data-toggle="dropdown">
-                        <i data-feather="settings"></i>
-                      </a>
-                      <!-- Setting START-->
-                      <div class="dropdown-menu dropdown-menu-center mt-3 w-md animate fadeIn">
-                        <div class="setting px-3">
-                          <div class="mb-2 text-muted">
-                            <strong>Color:</strong>
-                          </div>
-                          <div class="mb-2">
-                            <label class="radio radio-inline ui-check ui-check-md">
-                              <input type="radio" name="bg" value="">
-                              <i></i>
-                            </label>
-                            <label class="radio radio-inline ui-check ui-check-color ui-check-md">
-                              <input type="radio" name="bg" value="bg-dark">
-                              <i class="bg-dark"></i>
-                            </label>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- Setting END-->
-                    </li>
-                <!-- Navarbar toggle btn -->
-                <li class="nav-item d-lg-none">
-                    <a href="#" class="nav-link px-2" data-toggle="collapse" data-toggle-class data-target="#navbarToggler">
-                        <i data-feather="search"></i>
-                    </a>
-                </li>
-                <li class="nav-item d-lg-none">
-                    <a class="nav-link px-1" data-toggle="modal" data-target="#aside">
-                        <i data-feather="menu"></i>
-                    </a>
-                </li>
-            </ul>
-            </div>
-          </nav>
-    </div>
-</section>
 <section class="slider position-relative">
     <div class="page-content page-container" id="page-content">
         <div class="p-1">
@@ -184,12 +75,14 @@
         </div>
     </div>
 </section>
-
-<section class="card-boxs mt-5">
+<section class="card-boxs animate__animated animate__bounce mt-5">
     <div class="container">
         <div class="row">
             <div class="col-md-4 col-12">
-                <div class="card">
+                <div class="card position:relative">
+                    <div class="service-icon">
+                        <img class="card-pic" src="/img/mobile.svg" alt="">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -201,6 +94,9 @@
             </div>
             <div class="col-md-4 col-12">
                 <div class="card">
+                    <div class="service-icon">
+                        <img class="card-pic" src="/img/mobile.svg" alt="">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -212,6 +108,9 @@
             </div>
             <div class="col-md-4 col-12">
                 <div class="card">
+                    <div class="service-icon">
+                        <img class="card-pic" src="/img/mobile.svg" alt="">
+                    </div>
                     <div class="card-body">
                         <h5 class="card-title">Card title</h5>
                         <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -239,7 +138,7 @@
                     <div class="details offer-card rounded-bottom" style="background: url({{ asset('img/talking.jpg') }}) no-repeat center;background-size: cover;">
                         <p class="offer-text" style="">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
                         <div class="mb-3 text-center">
-                            <button class="btn w-sm mb-1 btn-rounded btn-outline-success">Buy Now</button>
+                            <button class="btn w-sm mb-1 btn-rounded btn-outline-success btn">Buy Now</button>
                         </div>
                     </div>
                 </div>
@@ -276,7 +175,63 @@
 
 
 
-
-
-
+{{-- <section class="footer">
+<footer class="page-footer font-small indigo">
+    <div class="container">
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3 custom-link">
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+              <a href="#">About us</a>
+          </h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#">Products</a>
+          </h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a class="#" href="#">What we offer</a>
+          </h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#">Help & Support</a>
+          </h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#">Contact</a>
+          </h6>
+        </div>
+      </div>
+      <hr class="rgba-whitet mt-3 custom-hr">
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+        <div class="col-md-8 col-12 mt-5">
+          <p style="line-height: 1.7rem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ratione quis corporis earum. Ducimus animi ratione amet quae sint voluptatem, quisquam distinctio mollitia sequi, repellat, maiores repellendus obcaecati alias corrupti!</p>
+        </div>
+      </div>
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+      <div class="row pb-3">
+        <div class="col-md-12">
+          <div class="mb-5 flex-center text-center">
+            <a class="facebook">
+              <i class="fa fa-facebook-f fa-lg white-text mr-4"> </i>
+            </a>
+            <a class="twitter">
+              <i class="fa fa-twitter fa-lg white-text mr-4"> </i>
+            </a>
+            <a class="instagram">
+              <i class="fa fa-instagram fa-lg white-text mr-4"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 custom-link">© 2020 Copyright:
+      <a href="http://127.0.0.1:8000/"> SKYBLUR</a>
+    </div>
+  </footer>
+</section> --}}
 @endsection
