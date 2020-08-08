@@ -49881,6 +49881,17 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/blog.scss":
+/*!**********************************!*\
+  !*** ./resources/sass/blog.scss ***!
+  \**********************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/sass/custom.scss":
 /*!************************************!*\
   !*** ./resources/sass/custom.scss ***!
@@ -49892,16 +49903,41 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/customregister.scss":
+/*!********************************************!*\
+  !*** ./resources/sass/customregister.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
+/***/ "./resources/sass/singlepage.scss":
+/*!****************************************!*\
+  !*** ./resources/sass/singlepage.scss ***!
+  \****************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ 0:
-/*!******************************************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/custom.scss ***!
-  \******************************************************************************************/
+/*!*******************************************************************************************************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/sass/app.scss ./resources/sass/customregister.scss ./resources/sass/custom.scss ./resources/sass/blog.scss ./resources/sass/singlepage.scss ***!
+  \*******************************************************************************************************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! F:\xampp\htdocs\skyblur\resources\js\app.js */"./resources/js/app.js");
 __webpack_require__(/*! F:\xampp\htdocs\skyblur\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! F:\xampp\htdocs\skyblur\resources\sass\custom.scss */"./resources/sass/custom.scss");
+__webpack_require__(/*! F:\xampp\htdocs\skyblur\resources\sass\customregister.scss */"./resources/sass/customregister.scss");
+__webpack_require__(/*! F:\xampp\htdocs\skyblur\resources\sass\custom.scss */"./resources/sass/custom.scss");
+__webpack_require__(/*! F:\xampp\htdocs\skyblur\resources\sass\blog.scss */"./resources/sass/blog.scss");
+module.exports = __webpack_require__(/*! F:\xampp\htdocs\skyblur\resources\sass\singlepage.scss */"./resources/sass/singlepage.scss");
 
 
 /***/ })

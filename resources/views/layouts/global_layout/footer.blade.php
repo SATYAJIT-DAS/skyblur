@@ -21,7 +21,7 @@
 <script src="{{ asset('js/basik_js/lazyload.js') }}"></script>
 <script src="{{ asset('js/basik_js/plugin.js') }}"></script>
 <!-- scrollreveal -->
-<script src="{{ asset('libs/scrollreveal/dist/scrollreveal.min.js') }}"></script>
+{{-- <script src="{{ asset('libs/scrollreveal/dist/scrollreveal.min.js') }}"></script> --}}
 <!-- feathericon -->
 <script src="{{ asset('libs/feather-icons/dist/feather.min.js') }}"></script>
 <script src="{{ asset('js/basik_js/plugins/feathericon.js') }}"></script>
@@ -33,5 +33,6 @@
 @if (Request::is('admin/*'))
 <script src="{{asset('js/admin/script.js')}}"></script>
 @endif
+<script src="{{ asset('js/frontend/script.js') }}"></script>
     </body>
 </html>

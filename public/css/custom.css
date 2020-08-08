@@ -2,22 +2,8 @@
   width: 100%;
 }
 
-.navigation .container-fluid {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-.navigation .navbar-toggler {
-  font-size: 20px;
-}
-
 .navigation .navbar-brand {
   font-size: 22px;
-  font-weight: 700;
-}
-
-.navigation .nav-text {
-  margin: 12px 16px;
 }
 
 .search-box-div .search-box .form-control {
@@ -60,6 +46,86 @@
 .dropdown-menu-center {
   left: 50%;
   transform: translateX(-80%);
+}
+
+.offer-card {
+  height: 20rem;
+}
+
+.offer-card .offer-text {
+  text-align: center;
+  font-size: 25px;
+  color: #fdf3ca;
+  padding-top: 15%;
+}
+
+.custom-footer {
+  background-color: #2e3624;
+}
+
+.custom-footer hr {
+  border-color: #4e4e4e;
+}
+
+.custom-footer h5 {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.custom-footer .custom-link a {
+  color: #cecece;
+}
+
+.custom-footer .custom-link p {
+  color: #cecece;
+}
+
+.custom-footer .footer-copyright {
+  background-color: #21271a;
+}
+
+.card-pic {
+  width: 180px;
+  position: relative;
+  right: -188px;
+}
+
+.navbar-toggler {
+  font-size: 20px;
+}
+
+#scroll {
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #ffffff;
+  box-shadow: 0px 3px 13px 1px rgba(0, 0, 0, 0.3);
+  text-indent: -9999px;
+  display: none;
+  border-radius: 60px;
+}
+
+#scroll span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -8px;
+  margin-top: -12px;
+  height: 0;
+  width: 0;
+  border: 8px solid transparent;
+  border-bottom-color: #cecece;
+}
+
+#scroll:hover {
+  background-color: #04788a;
+  opacity: 1;
+  filter: "alpha(opacity=100)";
+  -ms-filter: "alpha(opacity=100)";
 }
 
 @media only screen and (min-width: 768px) {

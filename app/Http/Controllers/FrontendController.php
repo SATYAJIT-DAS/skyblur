@@ -27,4 +27,12 @@ class FrontendController extends Controller
         }
         dd($unique_types);
     }
+    public function blog()
+    {
+        return view('layouts.frontend.blog');
+    }
+    public function singlepage()
+    {
+        return view('layouts.frontend.singlepage');
+    }
 }

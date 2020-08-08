@@ -173,41 +173,51 @@
         </div>
       </div>
     </div>
-  </section>
-
-  <section class="card-boxs">
+</section>
+<section class="card-boxs animate__animated animate__bounce mt-5">
     <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
+        <div class="row">
+            <div class="col-md-4 col-12">
+                <div class="card position:relative">
+                    <div class="service-icon">
+                        <img class="card-pic" src="/img/mobile.svg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
+            <div class="col-md-4 col-12">
+                <div class="card">
+                    <div class="service-icon">
+                        <img class="card-pic" src="/img/mobile.svg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-4 col-12">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
+            <div class="col-md-4 col-12">
+                <div class="card">
+                    <div class="service-icon">
+                        <img class="card-pic" src="/img/mobile.svg" alt="">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        <p class="card-text">
+                            <small class="text-muted">Last updated 3 mins ago</small>
+                        </p>
+                    </div>
+                </div>
             </div>
           </div>
         </div>
@@ -215,14 +225,114 @@
     </div>
   </section>
 
-  <Section class="offer">
+<Section class="offer mt-5">
     <div class="container">
-      <div class="row">
-      </div>
+        <div class="d-flex justify-content-center pb-3">
+            <h1>Limited Offer</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card rounded w-100 ">
+                    <div class="rounded-top"style="background-color: #0066cc">
+                        <h1 class="text-center text-white ">test</h1>
+                    </div>
+                    <div class="details offer-card rounded-bottom" style="background: url({{ asset('img/talking.jpg') }}) no-repeat center;background-size: cover;">
+                        <p class="offer-text" style="">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <div class="mb-3 text-center">
+                            <button class="btn w-sm mb-1 btn-rounded btn-outline-success btn">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card rounded w-100 ">
+                    <div class="rounded-top"style="background-color: #01b31a;">
+                        <h1 class="text-center text-white ">test</h1>
+                    </div>
+                    <div class="details offer-card rounded-bottom" style="background: url({{ asset('img/talking-2.jpg') }}) no-repeat center;background-size: cover;">
+                        <p class="offer-text" style="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="mb-3 text-center">
+                            <button class="btn w-sm mb-1 btn-rounded btn-outline-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 d-flex justify-content-center">
+                <div class="card rounded w-100 ">
+                    <div class="rounded-top"style="background-color: #5212a1">
+                        <h1 class="text-center text-white ">test</h1>
+                    </div>
+                    <div class="details offer-card rounded-bottom" style="background: url({{ asset('img/talking-3.jpg') }}) no-repeat center;background-size: cover;">
+                        <p class="offer-text" style="">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <div class="mb-3 text-center">
+                            <button class="btn w-sm mb-1 btn-rounded btn-outline-success">Buy Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   </Section>
 
 
 
-
-  @endsection
+{{-- <section class="footer">
+<footer class="page-footer font-small indigo">
+    <div class="container">
+      <div class="row text-center d-flex justify-content-center pt-5 mb-3 custom-link">
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+              <a href="#">About us</a>
+          </h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#">Products</a>
+          </h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a class="#" href="#">What we offer</a>
+          </h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#">Help & Support</a>
+          </h6>
+        </div>
+        <div class="col-md-2 mb-3">
+          <h6 class="text-uppercase font-weight-bold">
+            <a href="#">Contact</a>
+          </h6>
+        </div>
+      </div>
+      <hr class="rgba-whitet mt-3 custom-hr">
+      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+        <div class="col-md-8 col-12 mt-5">
+          <p style="line-height: 1.7rem">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero ratione quis corporis earum. Ducimus animi ratione amet quae sint voluptatem, quisquam distinctio mollitia sequi, repellat, maiores repellendus obcaecati alias corrupti!</p>
+        </div>
+      </div>
+      <hr class="clearfix d-md-none rgba-white-light" style="margin: 10% 15% 5%;">
+      <div class="row pb-3">
+        <div class="col-md-12">
+          <div class="mb-5 flex-center text-center">
+            <a class="facebook">
+              <i class="fa fa-facebook-f fa-lg white-text mr-4"> </i>
+            </a>
+            <a class="twitter">
+              <i class="fa fa-twitter fa-lg white-text mr-4"> </i>
+            </a>
+            <a class="instagram">
+              <i class="fa fa-instagram fa-lg white-text mr-4"> </i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3 custom-link">© 2020 Copyright:
+      <a href="http://127.0.0.1:8000/"> SKYBLUR</a>
+    </div>
+  </footer>
+</section> --}}
+@endsection
